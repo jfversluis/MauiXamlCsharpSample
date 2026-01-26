@@ -2,6 +2,7 @@
 
 	<PropertyGroup>
 		<MauiVersion>10.0.40-ci.pr33693.26076.2</MauiVersion>
+		<MauiXamlInflator>SourceGen</MauiXamlInflator>
 		<TargetFrameworks>net10.0-android;net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net10.0-windows10.0.19041.0</TargetFrameworks>
 
