@@ -133,7 +133,7 @@
                     <!-- NEW: C# Expression with boolean AND -->
                     <Button Text="Submit" 
                             IsEnabled="{HasAccount &amp;&amp; AgreedToTerms}"
-                            BackgroundColor="DarkGreen" 
+                            
                             TextColor="White" />
                     
                     <!-- OLD: Required MultiBinding with AllTrueConverter or a computed property
