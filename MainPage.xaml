@@ -161,10 +161,22 @@
                 <VerticalStackLayout Spacing="10">
                     <Label Text="6. Lambda Event Handlers" FontAttributes="Bold" />
                     
-                    <!-- NEW: C# Expression with inline lambda -->
+                    <!-- NEW: C# Expression with inline lambda (calling page method) -->
                     <Button Text="{$'Clicked {ClickCount} times'}" 
                             Clicked="{(s, e) => this.OnCounterClicked()}"
                             BackgroundColor="DarkOrange" 
+                            TextColor="White" />
+                    
+                    <!-- NEW: C# Expression accessing ViewModel property directly -->
+                    <Button Text="Increment via ViewModel" 
+                            Clicked="{(s, e) => ViewModel.ClickCount++}"
+                            BackgroundColor="Orange" 
+                            TextColor="White" />
+                    
+                    <!-- NEW: C# Expression with cast to ViewModel -->
+                    <Button Text="Increment via cast" 
+                            Clicked="{(s, e) => ((MainViewModel)BindingContext).ClickCount++}"
+                            BackgroundColor="DarkGoldenrod" 
                             TextColor="White" />
                     
                     <!-- OLD: Required code-behind event handler or Command
