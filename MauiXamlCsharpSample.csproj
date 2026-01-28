@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<MauiVersion>10.0.40-ci.pr33693.26076.45</MauiVersion>
+		<MauiVersion>10.0.40-ci.pr33693.26077.44</MauiVersion>
 		<MauiXamlInflator>SourceGen</MauiXamlInflator>
 		<EnablePreviewFeatures>true</EnablePreviewFeatures>
 		<TargetFrameworks>net10.0-android;net10.0-ios;net10.0-maccatalyst</TargetFrameworks>

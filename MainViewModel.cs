@@ -12,7 +12,6 @@ public class MainViewModel : INotifyPropertyChanged
     private bool _hasAccount = true;
     private bool _agreedToTerms = false;
     private int _clickCount = 0;
-    private string _statusMessage = "";
 
     public string Name
     {
@@ -57,12 +56,6 @@ public class MainViewModel : INotifyPropertyChanged
     }
 
     public void IncrementCount() => ClickCount++;
-
-    public string StatusMessage
-    {
-        get => _statusMessage;
-        set { _statusMessage = value; OnPropertyChanged(); }
-    }
 
     // For traditional binding comparison
     public string Greeting => $"Hello, {Name}!";
