@@ -194,40 +194,6 @@
                 </VerticalStackLayout>
             </Border>
 
-            <!-- FEATURE 7: Async Event Handlers -->
-            <Border Stroke="Gray" Padding="15" StrokeShape="RoundRectangle 8">
-                <VerticalStackLayout Spacing="10">
-                    <Label Text="7. Async Event Handlers" FontAttributes="Bold" />
-                    
-                    <!-- NEW: C# Expression with async lambda -->
-                    <Button Text="Save (Async)" 
-                            Clicked="{async (s, e) => await SaveAsync()}"
-                            BackgroundColor="DarkRed" 
-                            TextColor="White" />
-                    
-                    <!-- OLD: Required code-behind async event handler or AsyncCommand
-                    <Button Text="Save (Async)" 
-                            Clicked="OnSaveClicked"
-                            BackgroundColor="DarkRed" 
-                            TextColor="White" />
-                    
-                    Plus in code-behind:
-                    private async void OnSaveClicked(object sender, EventArgs e)
-                    {
-                        await SaveAsync();
-                    }
-                    
-                    Or with AsyncCommand (from MVVM Toolkit):
-                    <Button Text="Save (Async)" 
-                            Command="{Binding SaveCommand}"
-                            BackgroundColor="DarkRed" 
-                            TextColor="White" />
-                    -->
-                    
-                    <Label Text="{StatusMessage}" TextColor="DarkGreen" />
-                </VerticalStackLayout>
-            </Border>
-
         </VerticalStackLayout>
     </ScrollView>
 
