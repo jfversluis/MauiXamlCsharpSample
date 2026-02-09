@@ -1,3 +1,5 @@
+Watch this in action on YouTube: https://youtu.be/xPI8hLpyc5k
+
 # XAML C# Expressions Demo
 
 This sample app demonstrates the new **XAML C# Expressions** feature coming to .NET MAUI - allowing you to embed C# expressions directly in XAML property values.
